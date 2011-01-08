@@ -1,0 +1,22 @@
+%fieldset
+  %legend Realty Location
+  %label Address
+  = form.text_field :address, :size => 15, :class => "address"
+  %label Latitude
+  = form.text_field :latitude, :size => 15, :class => "latitude"
+  %label Longitude
+  = form.text_field :longitude, :size => 15, :class => "longitude"
+%fieldset 
+  %legend Realty Information
+  %label Rooms
+  = form.text_field :rooms, :size => 15, :class => "rooms"
+  %label Bathrooms
+  = form.text_field :bathrooms, :size => 15, :class => "bathrooms"
+  %label Size
+  = form.text_field :size, :size => 15, :class => "size"
+  %label Other Facilities
+  = form.text_field :other_facilities, :size => 15, :class => "other_facilities"
+  %label Description
+  = form.text_field :description, :size => 15, :class => "description"
+
+= form.submit "Save"

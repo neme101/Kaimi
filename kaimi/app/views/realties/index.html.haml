@@ -1,0 +1,25 @@
+%h1 Listing Realties
+
+%p= notice
+%p= alert
+
+%table
+  %thead
+    %tr
+      %th Id
+      %th Address
+      %th Bathrooms
+      %th Rooms
+
+  %tbody
+    - @realties.each do |realty|
+      %tr
+        %td= realty.id
+        %td= realty.address
+        %td= realty.bathrooms
+        %td= realty.rooms
+        %td= link_to 'Show', realty
+        %td= link_to 'Edit', edit_realty_path(realty)
+        %td= link_to 'Destroy', realty, :confirm => 'Are you sure?', :method => :delete
+
+= link_to 'New Realty', new_realty_path

@@ -1,0 +1,9 @@
+%h1 The Realty has been destroyed!
+
+%h3 U sure? You can redo it below :)
+
+= form_for @realty do |form|
+	= render :partial => 'form', :object => form
+
+
+= link_to 'Back to Realty Index', realties_path	

@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101212035145) do
+ActiveRecord::Schema.define(:version => 20110108200530) do
+
+  create_table "realties", :force => true do |t|
+    t.string   "address"
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.integer  "bathrooms"
+    t.integer  "rooms"
+    t.decimal  "size"
+    t.text     "other_facilities"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

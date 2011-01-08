@@ -1,0 +1,35 @@
+%h1 Showing Realty
+
+%p= notice
+%p= alert
+
+%fieldset
+  %legend General Information
+  %p
+    %strong Rooms:
+    = @realty.rooms
+  %p
+    %strong Bathrooms:
+    = @realty.bathrooms
+  %p
+    %strong Size:
+    = "#{@realty.size} m2"
+  %p
+    %strong Other Facilities:
+    = @realty.other_facilities
+  %p
+    %strong Description:
+    = @realty.description
+
+%fieldset
+  %legend Location
+  %p
+    %strong Address:
+    = @realty.address
+  %p
+    %strong Coordinates:
+    = "#{@realty.latitude}, #{@realty.longitude}"
+
+= link_to 'Edit', edit_realty_path(@company)
+|
+= link_to 'Back', realties_path
