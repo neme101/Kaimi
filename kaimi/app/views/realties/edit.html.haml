@@ -1,0 +1,7 @@
+%h1 Edit Property
+
+%p= notice
+%p= alert
+
+= form_for @realty, :html => { :multipart => true } do |form|
+	= render :partial => 'form', :object => form

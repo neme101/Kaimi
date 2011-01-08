@@ -1,2 +1,0 @@
-class RealtyController < ApplicationController
-end

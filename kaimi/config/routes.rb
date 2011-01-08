@@ -1,7 +1,9 @@
 Kaimi::Application.routes.draw do
-  root :to => 'home#index'
+  
+  root :to => 'realties#index'
 
   devise_for :users
+  resources :realties
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
