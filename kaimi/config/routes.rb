@@ -1,6 +1,7 @@
 Kaimi::Application.routes.draw do
-  
-  root :to => 'realties#index'
+  match 'search' => 'search#index', :via => [:get, :post]
+
+  root :to => 'home#index'
 
   devise_for :users
   resources :realties
