@@ -18,5 +18,14 @@
   = form.text_field :other_facilities, :size => 15, :class => "other_facilities"
   %label Description
   = form.text_field :description, :size => 15, :class => "description"
+%fieldset
+  %legend Photos
+  - i = 0
+  = form.fields_for :realty_images do |form_photos| 
+    %p 
+      - if !@realty.realty_images[i].blank?
+        = image_tag @realty.realty_images[i].photo.url(:thumb)
+      = form_photos.file_field :photo
+      - i+=1
 
 = form.submit "Save"
