@@ -1,0 +1,7 @@
+%h2 Featured Realties
+%ul
+  - @featured_realties.each do |realty|
+    %li
+      = realty.address
+
+= link_to 'View All', realties_path

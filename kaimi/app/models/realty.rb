@@ -4,4 +4,8 @@ class Realty < ActiveRecord::Base
   
   accepts_nested_attributes_for :realty_images, :allow_destroy => true
   
+  def self.featured
+    # TODO "featured" algorithm
+    return Realty.limit(6)
+  end
 end
