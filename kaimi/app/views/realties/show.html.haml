@@ -30,6 +30,12 @@
     %strong Coordinates:
     = "#{@realty.latitude}, #{@realty.longitude}"
 
+%fieldset
+  %legend Photos
+  -@realty.realty_images.each do |image|
+    %p= image_tag image.photo.url(:thumb)
+
 = link_to 'Edit', edit_realty_path(@company)
 |
 = link_to 'Back', realties_path
+
