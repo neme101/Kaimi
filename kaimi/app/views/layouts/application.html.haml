@@ -10,5 +10,17 @@
     = csrf_meta_tag
   
   %body.bp
+  %div.span-24.header.last
+    .span-18.logo
+      %h1 Logo
+    .span-6.navigation.last
+      %ul.nav
+        %li
+          %a Ingresar
+        %li
+          %a Registrarse
+        %li
+          %a Ayuda
+
     %div.content#content.span-24.last
       =yield
