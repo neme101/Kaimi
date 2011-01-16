@@ -33,6 +33,8 @@ GEM
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
     cancan (1.4.1)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     devise (1.1.5)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 1.0.2)
@@ -101,6 +103,7 @@ PLATFORMS
 
 DEPENDENCIES
   cancan
+  compass (>= 0.10.6)
   devise
   haml
   nokogiri
