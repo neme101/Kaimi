@@ -329,7 +329,7 @@ body.bp .bottom {
 }
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 body.bp .showgrid {
-  background: url('/images/grid.png?1294528874');
+  background: url('/images/grid.png?1295139558');
 }
 /* line 4, ../../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
 body.bp .error {
@@ -429,6 +429,12 @@ body.bp {
 /* line 29, ../../../app/stylesheets/partials/_page.sass */
 .header .logo {
   display: inline-block;
+}
+
+/* line 32, ../../../app/stylesheets/partials/_page.sass */
+.addRealtyMap {
+  width: 500px;
+  height: 300px;
 }
 
 /* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */

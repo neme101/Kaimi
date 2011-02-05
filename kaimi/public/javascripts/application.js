@@ -1,2 +1,9 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+window.addEvent('domready',function(){
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(-34.883611, -56.181944);
+        var myOptions = {
+            zoom: 8        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+    }
+    initialize();
+});
