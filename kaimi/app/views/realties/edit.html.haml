@@ -3,5 +3,6 @@
 %p= notice
 %p= alert
 
-= form_for @realty, :html => { :multipart => true } do |form|
-	= render :partial => 'form', :object => form
+%div.form-wrapper.span-12.last
+  = form_for @realty, :html => { :multipart => true, :class => 'bp realties' } do |form|
+  	= render :partial => 'form', :object => form

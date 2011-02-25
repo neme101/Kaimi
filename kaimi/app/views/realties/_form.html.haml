@@ -1,26 +1,32 @@
 %fieldset
   %legend Realty Location
-  %label Address
-  = form.text_field :address, :size => 15, :class => "address"
-  %fieldset
-    %legend Location
+  %p
+    %label Address
+    = form.text_field :address, :size => 15, :class => "address", :id => "address"
+  %p
     %label Latitude
-    = form.text_field :latitude, :size => 15, :class => "latitude"
+    = form.text_field :latitude, :size => 15, :class => "latitude", :id => "latitude"
+  %p
     %label Longitude
-    = form.text_field :longitude, :size => 15, :class => "longitude"
-    %div#map_canvas.addRealtyMap
+    = form.text_field :longitude, :size => 15, :class => "longitude", :id => "longitude"
+  %div#map_canvas.addRealtyMap
 %fieldset 
   %legend Realty Information
-  %label Rooms
-  = form.text_field :rooms, :size => 15, :class => "rooms"
-  %label Bathrooms
-  = form.text_field :bathrooms, :size => 15, :class => "bathrooms"
-  %label Size
-  = form.text_field :size, :size => 15, :class => "size"
-  %label Other Facilities
-  = form.text_field :other_facilities, :size => 15, :class => "other_facilities"
-  %label Description
-  = form.text_field :description, :size => 15, :class => "description"
+  %p
+    %label Rooms
+    = form.text_field :rooms, :size => 15, :class => "rooms"
+  %p
+    %label Bathrooms
+    = form.text_field :bathrooms, :size => 15, :class => "bathrooms"
+  %p
+    %label Size
+    = form.text_field :size, :size => 15, :class => "size"
+  %p
+    %label Other Facilities
+    = form.text_field :other_facilities, :size => 15, :class => "other_facilities"
+  %p
+    %label Description
+    = form.text_field :description, :size => 15, :class => "description"
 %fieldset
   %legend Photos
   - i = 0

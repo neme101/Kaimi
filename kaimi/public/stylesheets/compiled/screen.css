@@ -433,8 +433,10 @@ body.bp {
 
 /* line 32, ../../../app/stylesheets/partials/_page.sass */
 .addRealtyMap {
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 18, ../../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
